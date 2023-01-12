@@ -355,18 +355,29 @@ h6 {
   width: 100%;
   height: 70vh;
   margin-top: 70px;
+  background-image: url(/assets/img/cleaning3.jpg);
+  background-repeat: no-repeat;
+  background-size: 110%,110%;
+  background-position: center, center;
+  animation: hero-animation 2s ;
+}
+
+@keyframes hero-animation {
+  0%{background-size: 100%,100%;}
+  
+  100%{background-size: 110%,110%;}
 }
 
 #hero h1 {
   margin: 0 0 10px 0;
-  font-size: 48px;
-  font-weight: 700;
+  font-size: 50px;
+  font-weight: bold;
   line-height: 56px;
-  color: black;
+  color:#ffffff;
 }
 
 #hero h2 {
-  color: #484848;
+  color: #ffffff;
   margin-bottom: 50px;
   font-size: 24px;
 }
@@ -380,13 +391,13 @@ h6 {
   padding: 10px 30px;
   border-radius: 50px;
   transition: 0.5s;
-  color: #3498db;
-  border: 2px solid #3498db;
+  color: white;
+  background-color:#3498db;
 }
 
 #hero .btn-get-started:hover {
-  background: #3498db;
-  color: #fff;
+  background: white;
+  color: #3498db;
 }
 
 #hero .animated {
